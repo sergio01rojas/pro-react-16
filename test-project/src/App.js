@@ -12,17 +12,17 @@ export default class App extends Component{
     super(props);
     this.state = {
       userName:"Sergio Rojas",
-      todoItems:[{ action: "Buy Flowers", done: false },
-                { action: "Get Shoes", done: false },
-                { action: "Collect Tickets", done: true },
-                { action: "Call Joe", done: false }],
+      todoItems:[{ action: "Task 1", done: false },
+                { action: "Task 2", done: false },
+                { action: "Task 3", done: true },
+                { action: "Task 4", done: false }],
       showCompletedTask: true          
     };
   }
 
   changeStateData = () => {
       this.setState({
-        userName: this.state.userName === "Sergio Rojas" ? "Spread operator" : "Sergio Rojas"
+        userName: this.state.userName === "Sergio Rojas" ? "Sergio Enrique" : "Sergio Rojas"
       });
   };
 
